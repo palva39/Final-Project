@@ -3,6 +3,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: cadetblue;
+    display: flex;
+    flex-direction: column;   /* stack the content vertically */
+    min-height: 100vh;
 }
 .navbar a {
     float: left;
@@ -65,14 +68,15 @@ body {
     bottom: auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, "Sans Serif Collection", serif;
 }
+#weclome{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, "Sans Serif Collection", serif;
+}
 
 footer {
     background-color: #111;
     color: #fff;
-    text-align: center;
-    padding: 5px;
     position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
+    text-align: center;
 }
