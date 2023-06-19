@@ -38,10 +38,18 @@ body {
     text-shadow: 2px 2px #333;
 }
 
-.carousel-inner > .carousel-item > img{ margin:auto; }
+#demo .carousel-item img {
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
 .carousel-inner {
     height: 0;
-    padding-bottom: 25%; /* this sets carousel aspect ratio (4:1 here) */
+    padding-bottom: 40%; /* this sets carousel aspect ratio (4:1 here) */
 }
 
 .carousel-item {
@@ -52,9 +60,10 @@ body {
     left: 0;
 }
 
-.carousel-item img {
-    height: 100%; /* Bootstrap handles width already */
-    object-fit: cover; /* or 'contain' if you want stretch instead of crop */
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, "Sans Serif Collection", serif;
 }
 
 footer {
