@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: cadetblue;
+}
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    font-size: 18px;
+    text-align: center;
+    font-family: Fantasy, sans-serif;
+    padding: 5px 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.navbar a:hover {
+    color: lime;
+    text-shadow: 0 0 5px lime;
+}
+.header {
+    text-align: center;
+    background-image: url('https://wallpaperaccess.com/full/5638801.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+}
+.header img {
+    height: 75px; /* adjust as needed */
+}
+.title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffd700;
+    text-align: center;
+    padding: 10px;
+    font-size: 3em;
+    text-shadow: 2px 2px #333;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
