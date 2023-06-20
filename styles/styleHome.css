@@ -75,8 +75,8 @@ body {
 footer {
     background-color: #111;
     color: #fff;
-    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
+    margin-top: auto;
 }
