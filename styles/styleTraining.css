@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;   /* stack the content vertically */
     min-height: 100vh;
+    position: relative;
 }
 .navbar a {
     float: left;
