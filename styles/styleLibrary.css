@@ -61,3 +61,17 @@ footer {
     background-repeat: no-repeat;
     position: relative;
 }
+.obiwan-kenobi {
+    color: #0000ff; /* This is blue */
+    font-family: 'Star Jedi', sans-serif; /* You will need to import this Star Wars-themed font or use an alternative */
+    text-shadow: 2px 2px #ff0000; /* Optional: Adds a red shadow to the text */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: 'Star Jedi';
+    src: url('fonts/Starjedi.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('fonts/Starjedi.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
