@@ -138,3 +138,9 @@ footer {
 p{
     font-size: 13pt;
 }
+iframe{
+    -ms-transform: translateX(0%) translateY(-50%);
+    margin: auto;
+    float: left;
+    height: 350px;
+}
