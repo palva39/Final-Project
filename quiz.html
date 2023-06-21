@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title>Virtual Jedi Academy</title>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="styles/quiz.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" class = "bg-primary">
+<header class="header">
+  <h3 class="title">VIRTUAL JEDI TRAINING ACADEMY</h3>
+</header>
+<nav class="navbar navbar-expand-sm bg-dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item bg-dark" href="Community.html">Community</a></li>
+            <li><a class="dropdown-item bg-dark" href="#">Contact Us!</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Holocron-Library.html">Holocron Library</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="JediTraining.html">Jedi Training</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="#">Test Yourself!</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-3">
+  <h2>Jedi Academy Quiz</h2>
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5 class="card-title">Question 1: What is the Force?</h5>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question1" id="answer1a" value="option1">
+        <label class="form-check-label" for="answer1a">An energy field created by all living things</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question1" id="answer1b" value="option2">
+        <label class="form-check-label" for="answer1b">A type of lightsaber technique</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question1" id="answer1c" value="option3">
+        <label class="form-check-label" for="answer1b">A forcefield</label>
+      </div>
+      <button class="btn btn-primary mt-2" onclick="checkAnswer('question1', 'answer1a')">Submit</button>
+    </div>
+  </div>
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5 class="card-title">Question 2: Who said, "Your focus determines your reality"?</h5>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question2" id="answer2a" value="option1">
+        <label class="form-check-label" for="answer2a">Yoda</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question2" id="answer2b" value="option2">
+        <label class="form-check-label" for="answer2b">Qui-Gon Jinn</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question2" id="answer2c" value="option3">
+        <label class="form-check-label" for="answer2a">Luke Skywalker</label>
+      </div>
+      <button class="btn btn-primary mt-2" onclick="checkAnswer('question2', 'answer2b')">Submit</button>
+    </div>
+  </div>
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5 class="card-title">Question 3: Who were the original Jedi precursors?</h5>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question3" id="answer3a" value="option1">
+        <label class="form-check-label" for="answer3a">The Sith Order</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question3" id="answer3b" value="option2">
+        <label class="form-check-label" for="answer3b">The Jedi Order</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question3" id="answer3c" value="option3">
+        <label class="form-check-label" for="answer3c">The Je'daii Order</label>
+      </div>
+      <button class="btn btn-primary mt-2" onclick="checkAnswer('question3', 'answer3c')">Submit</button>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5 class="card-title">Question 4: Where is the main store of Jedi knowledge and history?</h5>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question4" id="answer4a" value="option1">
+        <label class="form-check-label" for="answer4a">The Jedi Temple on Coruscant</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question4" id="answer4b" value="option2">
+        <label class="form-check-label" for="answer4b">The Great Library on Naboo</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question4" id="answer4c" value="option3">
+        <label class="form-check-label" for="answer4c">The Holocron Vault on Dantooine</label>
+      </div>
+      <button class="btn btn-primary mt-2" onclick="checkAnswer('question4', 'answer4a')">Submit</button>
+    </div>
+  </div>
+
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5 class="card-title">Question 5: What is a key aspect of Jedi combat training?</h5>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question5" id="answer5a" value="option1">
+        <label class="form-check-label" for="answer5a">Learning to use the Force to anticipate movements</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question5" id="answer5b" value="option2">
+        <label class="form-check-label" for="answer5b">Mastering physical strength and agility</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="question5" id="answer5c" value="option3">
+        <label class="form-check-label" for="answer5c">Perfecting their aim with a blaster</label>
+      </div>
+      <button class="btn btn-primary mt-2" onclick="checkAnswer('question5', 'answer5a')">Submit</button>
+    </div>
+  </div>
+
+  <div id="score"></div>
+</div>
+
+
+<footer>
+  &copy; 2023 Virtual Jedi Academy. All rights reserved.
+</footer>
+
+<script>
+  var score = 0;
+
+  function checkAnswer(question, correctAnswer) {
+    var radios = document.getElementsByName(question);
+    for (var i = 0, length = radios.length; i < length; i++) {
+      if (radios[i].checked) {
+        // if this radio button is checked
+        if(radios[i].id == correctAnswer){
+          //correct answer
+          document.getElementById(radios[i].id).parentNode.classList.add('text-success');
+          score++;
+        } else {
+          //wrong answer
+          document.getElementById(radios[i].id).parentNode.classList.add('text-danger');
+        }
+        document.getElementById('score').innerHTML = "Score: " + score;
+        // only one radio can be logically checked, don't check the rest
+        break;
+      }
+    }
+  }
+</script>
+
+
+
+</body>
+</html>
