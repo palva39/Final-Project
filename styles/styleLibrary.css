@@ -25,9 +25,7 @@ body {
     background-size: cover;
 
 }
-nav{
-    overflow:auto;
-}
+
 .navbar a {
     float: left;
     color: #f2f2f2;
